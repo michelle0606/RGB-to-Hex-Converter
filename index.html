@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="row">
+            <div id="rgb-display" class="col-8">
+                <h2>RGB</h2>
+                <ul id="rgb-list" class="rgb-input">
+                    <div id="list-control">
+                        <span>R:</span><input type="text" id="R-num" placeholder="0~255" required>
+                        <div class="box-style"></div>
+                        <small class="feedback small text-danger"></small>
+                    </div>
+                    <div id="list-control">
+                        <span>G:</span><input type="text" id="G-num" placeholder="0~255" required>
+                        <div class="box-style"></div>
+                        <small class="feedback small text-danger"></small>
+                    </div>
+                    <div id="list-control">
+                        <span>B:</span><input type="text" id="B-num" placeholder="0~255" required>
+                        <div class="box-style"></div>
+                        <small class="feedback small text-danger"></small>
+                    </div>
+                </ul>
+            </div>
+            <div id="hex-display" class="col-4">
+                <h2>HEX</h2>
+                <div id="hex-number">
+                    <!--display Hex Number here-->
+                </div>
+                <div id="hex-color">
+                    <!--display Hex Color here-->
+                </div>
+            </div>
+            <button type="submit" class="form-submit">Convert</button>
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>
